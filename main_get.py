@@ -8,12 +8,11 @@ class Student:
         return self._name
 
     # Setter for name with validation
-    def _set_name(self, name):
+    def set_name(self, name):
         if isinstance(name, str) and name.strip():
             self._name = name
         else:
             raise ValueError("Name must be a non-empty string.")
-
 
 try:
     student = Student("Ali")
